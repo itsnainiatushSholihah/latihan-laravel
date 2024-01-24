@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 use App\Http\Controllers\HomeController;
 
 
@@ -19,29 +18,8 @@ use App\Http\Controllers\HomeController;
 //     return view('kontak');
 // });
 
-// Route::get('/coba', function () {
-
-//     $nama = 'Kocheng';
-//     $kelas = 'Aerobik';
-//     $hobi = 'Makan';
-//     $nilai = '85';
-    
-
-//     return view('coba', ['nama' => 'Kocheng', 'kelas' => 'Aerobik', 'hobi'=> 'Makan', 'nilai' => '85']);
-// });
 
 
+Route::get('/home1', [HomeController::class, 'home1']);
 
-Route::get('/home', [HomeController::class, 'index']);
-
-Route::get('/about', [HomeController::class, 'about']);
-
-// Route::get('/test', [HomeController::class, 'test']);
-
-// Route::get('/test/{id}', [HomeController::class, 'test']);
-
-Route::get('/test', [HomeController::class, 'test']);
-
-Route::post('/save', [HomeController::class, 'simpan']);
-
-Route::get('/add', [HomeController::class, 'tambah']);
+Route::get('/about1', [HomeController::class, 'about1']);
