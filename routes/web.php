@@ -26,7 +26,7 @@ Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/menu', [MenuController::class, 'index']);
 
-Route::get('/menu', [KategoriController::class, 'index']);
+Route::get('/kategori', [KategoriController::class, 'index']);
 
 
 
