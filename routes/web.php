@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MenuController;
+use App\Http\Controllers\KategoriController;
 
 
 
@@ -20,6 +22,11 @@ use App\Http\Controllers\HomeController;
 
 
 
-Route::get('/home1', [HomeController::class, 'home1']);
+Route::get('/', [HomeController::class, 'index']);
 
-Route::get('/about1', [HomeController::class, 'about1']);
+Route::get('/menu', [MenuController::class, 'index']);
+
+Route::get('/menu', [KategoriController::class, 'index']);
+
+
+
